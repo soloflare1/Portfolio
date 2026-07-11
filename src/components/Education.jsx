@@ -16,7 +16,7 @@ const stats = [
   },
   {
     num: '#1',
-    lbl: 'Current Department Rank',
+    lbl: 'Current Rank',
     iconCls: 'fa-solid fa-medal',
     iconColor: 'var(--amber)'
   },
@@ -136,7 +136,7 @@ export default function Education() {
                   }}
                 />
                 <span>
-                  Ranked First in the Department Based on Current CGPA
+                  Ranked 1st in the Department Based on Current CGPA
                 </span>
               </div>
             </div>
