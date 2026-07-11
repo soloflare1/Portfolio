@@ -6,7 +6,7 @@
 
 *CSE Student · Competitive Programmer*
 
-[![Live](https://img.shields.io/badge/_Live_Portfolio-nosratee--jahan--naba.netlify.app-8b5cf6?style=for-the-badge)](https://nosratee-jahan-naba.netlify.app)
+[![Live](https://img.shields.io/badge/_Live_Portfolio-nosratee--jahan--naba.netlify.app-8b5cf6?style=for-the-badge)](https://nosratee.netlify.app)
 
 </div>
 
