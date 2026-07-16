@@ -4,7 +4,7 @@ const projects = [
     name: 'BAIUST Academix',
     desc: 'A centralized academic resource sharing platform for BAIUST students, structured around a Level → Term → Course → Resource hierarchy with role-based access and JWT authentication.',
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-    github: 'https://github.com/soloflare1', live: '#',
+    github: 'https://github.com/soloflare1', live: 'https://baiust-academix-client.vercel.app',
     screenshot: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80&fit=crop&crop=top',
     accent: 'linear-gradient(135deg,#8b5cf6,#6366f1)',
   },
@@ -13,7 +13,6 @@ const projects = [
     name: 'Shurokkha',
     desc: 'A standalone wearable emergency safety device providing real-time GPS-based SOS alerts via GSM. Features dual-mode activation (Silent & Audible), Google Maps location sharing, OLED status display, and portable battery-powered design — fully standalone, no internet required.',
     stack: ['ESP32', 'NEO-6M GPS', 'SIM800L GSM', 'OLED Display', 'TP4056', 'Li-ion Battery', 'Arduino IDE'],
-    features: ['Real-time GPS Tracking', 'Emergency SMS Alert', 'Dual-Mode Activation', 'Google Maps Link', 'OLED Status Display', 'Standalone Operation'],
     github: 'https://github.com/soloflare1', live: '#',
     bg: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop&crop=center',
     accent: 'linear-gradient(135deg,#dc2626,#9f1239)',
@@ -77,9 +76,6 @@ function IotCard({ p }) {
             <div className="pcard-iot-cat"><i className={p.categoryIcon} /> {p.category}</div>
             <div className="pcard-iot-name">{p.name}</div>
           </div>
-        </div>
-        <div className="pcard-iot-features-row">
-          {p.features.map(f => <span key={f} className="pcard-iot-feat"><i className="fa-solid fa-check" /> {f}</span>)}
         </div>
       </div>
       <div className="pcard-accent-bar" style={{ background: p.accent }} />
