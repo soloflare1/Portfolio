@@ -159,7 +159,7 @@ export default function Education() {
                 style={{ color: '#38bdf8' }} >
                 <i className="fa-solid fa-school" />
                 &nbsp;
-                Your College Name
+                Cumilla Board
               </div>
 
               <span
@@ -201,7 +201,7 @@ export default function Education() {
               >
                 <i className="fa-solid fa-school" />
                 &nbsp;
-                Your School Name
+                Cumilla Board
               </div>
 
               <span
