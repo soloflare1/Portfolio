@@ -7,6 +7,12 @@ const socialLinks = [
   { href: 'mailto:nosratee.jn@gmail.com',                  icon: 'fa-solid fa-envelope',   label: 'Email' },
 ]
 
+const academicStats = [
+  { icon: 'fa-solid fa-star',          num: '3.93',   lbl: 'CGPA (Rank #1 & 6x Scholarship)', color: 'var(--amber, #f59e0b)' },
+  { icon: 'fa-solid fa-trophy',        num: 'CP',     lbl: 'Awards & Contests',              color: 'var(--emerald, #10b981)' },
+  { icon: 'fa-solid fa-graduation-cap', num: 'BAIUST', lbl: 'CSE Student',                    color: 'var(--cyan, #0ea5e9)' },
+]
+
 const floatingIcons = [
   { icon: 'fa-brands fa-react',    color: '#61dafb', pos: { top: '2%',    right: '-14%' }, delay: '0s' },
   { icon: 'fa-brands fa-python',   color: '#c4b5fd', pos: { top: '35%',   right: '-20%' }, delay: '0.6s' },
@@ -51,12 +57,25 @@ export default function Hero() {
             </div>
             <h1 className="hn"><span className="hn-grad">Nosratee<br />Jahan Naba</span></h1>
             <p className="htag">Code. Build. Solve.</p>
+
+            {/* Academic Highlights Quick Row */}
+            <div className="hero-stats-row" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '0.75rem', margin: '1rem 0 1.25rem 0' }}>
+              {academicStats.map((st, idx) => (
+                <div key={idx} className="hero-stat-chip" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', padding: '0.5rem 0.6rem', borderRadius: '10px', backdropFilter: 'blur(8px)' }}>
+                  <div style={{ fontSize: '0.95rem', fontWeight: '700', color: st.color, display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <i className={st.icon} style={{ fontSize: '0.8rem' }} /> {st.num}
+                  </div>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--muted, #9ca3af)', marginTop: '0.1rem' }}>{st.lbl}</div>
+                </div>
+              ))}
+            </div>
+
             <p className="hero-about-text">
               Hi, I'm Nosratee Jahan Naba — a CSE student at BAIUST with a passion for software
               engineering, competitive programming, and academic excellence. I enjoy building
               practical software solutions and continuously expanding my knowledge through
               projects, research, and lifelong learning. <br />
-                I value discipline and consistency, and I believe that success comes through
+              I value discipline and consistency, and I believe that success comes through
               continuous practice, patience, and a willingness to learn from both achievements
               and mistakes.
             </p> 
@@ -75,7 +94,7 @@ export default function Hero() {
           </div>
           <div className="hero-avatar"><AnimatedAvatar /></div>
         </div>  
-        </div> 
-        </section>
+      </div> 
+    </section>
   )
 }
