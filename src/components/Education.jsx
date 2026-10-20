@@ -5,7 +5,8 @@ const terms = [
   'Spring 2024',
   'Fall 2024',
   'Spring 2025',
-  'Fall 2025'
+  'Fall 2025',
+  'Spring 2026'
 ];
 
 const stats = [
@@ -22,7 +23,7 @@ const stats = [
     iconColor: 'var(--amber)'
   },
   {
-    num: '5',
+    num: '6',
     lbl: 'Merit-based Scholarships',
     iconCls: 'fa-solid fa-award',
     iconColor: 'var(--emerald)'
